@@ -1,23 +1,25 @@
 <head>
 	<link rel="stylesheet" href="css/home.css"/>
 	<script type="text/javascript">
-	      if (!navigator.userAgent.match(/Wii/) && window.location.hash !=='#override') {
-	        window.location = 'https://landing.wiinet.xyz';
-	      }
-	    </script>
+        if (!navigator.userAgent.match(/Wii/) && window.location.hash !=='#override') {
+            window.location = 'https://landing.wiinet.xyz';
+        }
+    </script>
 </head>
 <body style="text-align:center;">
     <div style="padding-top:220px;">
-	<a href="games">GAMES</a> - <a href="videos">VIDEOS</a> - <a href="media">MEDIA</a> - <a href="utilities">UTILITIES</a> - <a href="others">OTHERS</a> - <a href="credits">CREDITS</a><br>
+        <a href="/games">GAMES</a> - <a href="/videos">VIDEOS</a> - <a href="/media">MEDIA</a> - <a href="/utilities">UTILITIES</a> - <a href="/others">OTHERS</a> - <a href="/credits">CREDITS</a><br>
     </div><br>
+
 	<div style="background-color:#000;">
 		<marquee style="color:yellow;">There is a new progress update video on the official WiiNet channel (both on YouTube and WiiNet Videos)!</marquee>
 	</div><br>
     <span id="tick2" style="font-size:24px;"></span>
-        <script type="text/javascript">
-       function show2(){
+
+    <script type="text/javascript">
+        function show2() {
             if (!document.all&&!document.getElementById)
-            return
+                return
             thelement=document.getElementById? document.getElementById("tick2"): document.all.tick2
            var Digital=new Date()
             var hours=Digital.getHours()
@@ -40,4 +42,5 @@
         }
         window.onload=show2;
         </script>
+
 </body>

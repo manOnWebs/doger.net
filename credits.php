@@ -1,6 +1,10 @@
+<?php
+$t = "Credits";
+?>
 <html>
     <head>
-		<link rel="stylesheet" type="text/css" href="../css/credits.css">
+        <title><?= $t; ?> - WiiNet </title>
+		<link rel="stylesheet" type="text/css" href="/data/css/credits.css">
     </head>
     <body>
         <div style="text-align:center;"> 
@@ -9,8 +13,9 @@
             Thanks for checking out WiiNet, and a special thank you to these people:
             <h3>Development Team</h3>
             HighSpeedTurtle - Founder/Lead Developer
-            <br>soafen - Developer/Graphic Designer
-            <br>SketchMaster2001 - Developer/Hosting Partner
+            <br>soafen - Former Developer/Graphic Designer
+            <br>fin - Developer (WiiNet Revived)
+            <!--<br>SketchMaster2001 - Developer/Hosting Partner
             <br>Snoot Fox - Wii no Ma Assistance/Hosting Partner
             <h3>Translators</h3>
             Luna - Spanish/German/Finnish Translation
@@ -43,7 +48,7 @@
             <br>RFLEpicGamer
             <br>terrawolf
             <br>oscie
-            <br>Wbubbler
+            <br>Wbubbler-->
         <br><br>And you, for providing us with helpful ideas and showing interest in the service.<br>Thank you! :><br><br>
         <a href="../" ><img src="../img/Home.png" style="height:20px;"></a></div><br>
     </body>
