@@ -1,11 +1,11 @@
 <head>
-    <title>Others | WiiNet</title>
-    <link rel="stylesheet" href="../css/others.css"/>
+    <title>Others | Doger.net</title>
+    <link rel="stylesheet" href="../data/css/others.css"/>
 </head>
 <body>
-    <a href="../"><img style="padding:5px;" src="../img/HomeLogo.png" width="150px"/></a><span style="position:absolute;right:5px;top:20px;"><a href="../games">GAMES</a> - <a href="../videos">VIDEOS</a> - <a href="../media">MEDIA</a> - <a href="../utilities">UTILITIES</a> - <a href="#">OTHERS</a></span>
+    <a href="../"><img style="padding:5px;" src="../img/HomeLogo.png" width="150px"/></a><span style="position:absolute;right:5px;top:20px;"><a href=".../games">GAMES</a> - <a href="../videos">VIDEOS</a> - <a href="../media">MEDIA</a> - <a href="../utilities">UTILITIES</a> - <a href="#">OTHERS</a></span>
     <br><br><br><br><br><br>
-    <center>Here is everything else WiiNet has to offer currently.</center>
+    <center>Here is everything else Doger.net has to offer currently.</center>
     <table>
         <tr>
             <td><a href="WiiRemoteTestingPage"><img src="../img/others/1.jpg"></a></td>
@@ -28,7 +28,7 @@
         </tr>
         <tr>
             <th><a href="http://bookmark.rc24.xyz">RC24 Bookmarks<br><span style="font-size:13px;">Bookmarks for the Internet<br>Channel</span></a></th>
-            <th><a href="http://wii.jrdi.me">NetCaps</a><br><span style="font-size:13px;">WiiNet fork, seemingly dead</span></th>
+            <th><a href="http://wii.jrdi.me">NetCaps</a><br><span style="font-size:13px;">Doger.net fork, seemingly dead</span></th>
             <th><a href="http://chadsoft.co.uk/wiimmfi">Wiimmfi Patcher Web</a><br><span style="font-size:13px;">Based on FlashHax</span></th>
         </tr>
         <tr>

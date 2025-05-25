@@ -1,46 +1,52 @@
-<head>
-	<link rel="stylesheet" href="css/home.css"/>
-	<script type="text/javascript">
-        if (!navigator.userAgent.match(/Wii/) && window.location.hash !=='#override') {
-            window.location = 'https://landing.wiinet.xyz';
-        }
-    </script>
-</head>
-<body style="text-align:center;">
-    <div style="padding-top:220px;">
-        <a href="/games">GAMES</a> - <a href="/videos">VIDEOS</a> - <a href="/media">MEDIA</a> - <a href="/utilities">UTILITIES</a> - <a href="/others">OTHERS</a> - <a href="/credits">CREDITS</a><br>
-    </div><br>
+<?php
+function edge() {
+    // fuck off, msedge
+   // no one likes you
+  include("./error/edge.htm");
+}
 
-	<div style="background-color:#000;">
-		<marquee style="color:yellow;">There is a new progress update video on the official WiiNet channel (both on YouTube and WiiNet Videos)!</marquee>
-	</div><br>
-    <span id="tick2" style="font-size:24px;"></span>
+function unsupported($browser) {
+    // Function to handle unsupported browsers
+    include("./error/unsupport_browser.php");
+    exit;
+}
 
-    <script type="text/javascript">
-        function show2() {
-            if (!document.all&&!document.getElementById)
-                return
-            thelement=document.getElementById? document.getElementById("tick2"): document.all.tick2
-           var Digital=new Date()
-            var hours=Digital.getHours()
-            var minutes=Digital.getMinutes()
-            var seconds=Digital.getSeconds()
-            var dn="PM"
-            if (hours<12)
-            dn="AM"
-            if (hours>12)
-            hours=hours-12
-            if (hours==0)
-            hours=12
-            if (minutes<=9)
-            minutes="0"+minutes
-            if (seconds<=9)
-            seconds="0"+seconds
-            var ctime=hours+":"+minutes+":"+seconds+" "+dn
-            thelement.innerHTML=""+ctime+""
-            setTimeout("show2()",1000)
-        }
-        window.onload=show2;
-        </script>
+$isEdge = strpos($_SERVER['HTTP_USER_AGENT'], 'Edg') !== false;
+if ($isEdge) {                     // this is arbitrary, but
+    edge();                       // you know
+    exit;                        // edge sucks
+}
 
-</body>
+function unsupported_device($device) {
+    include("./error/unsupport_device.php");
+    exit;
+}
+
+$isPSP = strpos($_SERVER['HTTP_USER_AGENT'], 'PlayStation Portable') !== false;
+if ($isPSP) {
+    unsupported_device("PlayStation Portable (PSP)");
+}
+
+$isDS = strpos($_SERVER['HTTP_USER_AGENT'], 'Nintendo DS') !== false;
+if ($isDS) {
+    unsupported_device("Nintendo DS");
+}
+
+$isTizen = strpos($_SERVER['HTTP_USER_AGENT'], 'Tizen') !== false && strpos($_SERVER['HTTP_USER_AGENT'], 'SMART-TV') !== false;
+if ($isTizen) {
+    unsupported_device("Samsung Smart TV");
+}
+
+// Detect if the browser is the Wii Internet Channel
+$isWii = strpos($_SERVER['HTTP_USER_AGENT'], "Opera") !== false && strpos($_SERVER['HTTP_USER_AGENT'], "Nintendo") !== false;
+
+if ($isWii) {
+    // Serve the old version for the Wii
+    include("wii.php");
+    exit;
+}
+
+// finally, we include the actual page
+include("default.php");
+exit;
+?>

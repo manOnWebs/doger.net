@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Utilities | WiiNet</title>
-	<link rel="stylesheet" href="../css/utilities.css">
+        <title>Utilities | Doger.net</title>
+	<link rel="stylesheet" href="../data/css/utilities.css">
     </head>
     <body>
-        <a href="../"><img style="padding:5px;" src="../img/HomeLogo.png" width="150px"/></a><span style="position:absolute;right:5px;top:20px;"><a href="../games">GAMES</a> - <a href="../videos">VIDEOS</a> - <a href="../media">MEDIA</a> - <a href="#">UTILITIES</a> - <a href="../others">OTHERS</a></span>
+        <a href="../"><img style="padding:5px;" src="../img/HomeLogo.png" width="150px"/></a><span style="position:absolute;right:5px;top:20px;"><a href=".../games">GAMES</a> - <a href="../videos">VIDEOS</a> - <a href="../media">MEDIA</a> - <a href="#">UTILITIES</a> - <a href="../others">OTHERS</a></span>
         <br><br><br><br><br><br>
         <span>Some useful tools you can use from the Internet Channel.</span><br><br>
         <table style="margin:auto;">

@@ -2,8 +2,8 @@
 $t = "JavaScript Games";
 ?>
 <head>
-    <title><?= $t; ?> - WiiNet</title>
-    <link rel="stylesheet" href="/data/css/games.css">
+    <title><?= $t; ?> - Doger.net</title>
+    <link rel="stylesheet" href="/data/data/css/games.css">
 </head>
 <body>
     <a href="../"><img style="padding:5px" src="../img/HomeLogo.png" width="150px"></a>

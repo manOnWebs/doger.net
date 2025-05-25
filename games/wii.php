@@ -1,6 +1,19 @@
 <head>
-        <title>Games | WiiNet</title>
-        <link rel="stylesheet" href="../css/games.css">
+        <title>Games | Doger.net</title>
+        <link rel="stylesheet" href="../data/css/games.css">
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if the user agent is not Wii
+            if (!navigator.userAgent.includes("Wii")) {
+                // Find all game links
+                const gameLinks = document.querySelectorAll('a[href$=".swf"]');
+                gameLinks.forEach(link => {
+                    const flashFile = link.getAttribute("href");
+                    link.href = `./ruffle.php?flashFile=${flashFile}`;
+                });
+            }
+        });
+    </script>
     </head>
     <body>
         <a href="../"><img style="padding:5px" src="../img/HomeLogo.png" width="150px"></a>

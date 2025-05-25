@@ -3,14 +3,14 @@ $t = "Credits";
 ?>
 <html>
     <head>
-        <title><?= $t; ?> - WiiNet </title>
+        <title><?= $t; ?> - Doger.net </title>
 		<link rel="stylesheet" type="text/css" href="/data/css/credits.css">
     </head>
     <body>
         <div style="text-align:center;"> 
             <br><br><br><br><br><br><br><br><br>
             <h1>Credits</h1>
-            Thanks for checking out WiiNet, and a special thank you to these people:
+            Thanks for checking out Doger.net, and a special thank you to these people:
             <h3>Development Team</h3>
             HighSpeedTurtle - Founder/Lead Developer
             <br>soafen - Former Developer/Graphic Designer

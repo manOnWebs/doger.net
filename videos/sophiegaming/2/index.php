@@ -1,5 +1,5 @@
 <head>
-	<link rel="stylesheet" type="text/css" href="../../../css/videos.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../data/css/videos.css"/>
 </head>
 <body>
         <div style="text-align:center;">
